@@ -34,7 +34,7 @@ function App() {
   // Removed showAIDialog state
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/MSignalAI-frontend">
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           {/* Removed setShowAIDialog from Layout */}
