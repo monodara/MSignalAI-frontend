@@ -67,7 +67,7 @@ export const useRSIChart = ({ containerRef, rsiData, showRSI }: UseRSIChartProps
       chart.remove();
       rsiChartRef.current = null;
     };
-  }, [showRSI]); // Only re-create the chart when showRSI changes
+  }, [showRSI, containerRef]); // Only re-create the chart when showRSI changes
 
   useEffect(() => {
     if (!rsiChartRef.current || !showRSI) return;

@@ -40,5 +40,5 @@ export const useChartSynchronization = ({ masterChartRef, slaveChartRefs }: UseC
       master.timeScale().unsubscribeVisibleTimeRangeChange(onVisibleTimeRangeChanged);
       unsubscribers.forEach(unsub => unsub());
     };
-  }, [masterChartRef, ...slaveChartRefs]);
+  }, [masterChartRef, slaveChartRefs]);
 };

@@ -69,7 +69,7 @@ export const useBandwidthChart = ({ containerRef, bandwidthData, showBandwidth }
         chartRef.current = null;
       }
     };
-  }, [bandwidthData, showBandwidth]);
+  }, [bandwidthData, showBandwidth, containerRef]);
 
   return chartRef;
 };
