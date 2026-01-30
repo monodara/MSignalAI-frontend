@@ -1,6 +1,7 @@
 // frontend/src/pages/StockAnalysisPage.tsx
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import ReactMarkdown from 'react-markdown'; // Import ReactMarkdown
 import { fetchAgentAnalysis } from '../services/api'; // Only need fetchAgentAnalysis now
 import { AgentAnalysis } from '../types'; // Only need AgentAnalysis now
 import ErrorDisplay from '../components/ErrorDisplay';
@@ -71,12 +72,12 @@ const StockAnalysisPage: React.FC = () => {
 
         <div className={styles['analysis-section']}>
           <h3>Technical Summary</h3>
-          <p>{analysis.technical_summary}</p>
+          <ReactMarkdown>{analysis.technical_summary}</ReactMarkdown>
         </div>
 
         <div className={styles['analysis-section']}>
           <h3>Fundamental Summary</h3>
-          <p>{analysis.fundamental_summary}</p>
+          <ReactMarkdown>{analysis.fundamental_summary}</ReactMarkdown>
         </div>
 
         <div className={styles['analysis-section']}>
