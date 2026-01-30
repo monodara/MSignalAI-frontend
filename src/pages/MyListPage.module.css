@@ -1,0 +1,50 @@
+/* My List Page Styles */
+.my-list-container {
+  margin-top: 0px;
+  /* Increased margin */
+  background-color: #1F2937;
+  padding: 20px 50px;
+  /* Increased padding */
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+}
+
+.my-list-list h2 {
+  color: #E5E7EB;
+  margin-bottom: 20px;
+  /* Increased margin */
+  font-size: 24px;
+  text-align: center;
+}
+
+.stock-list {
+  list-style: none;
+  padding: 0;
+}
+
+.stock-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  /* Adjusted padding */
+  border-bottom: 1px solid #374151;
+}
+
+.stock-list-item:last-child {
+  border-bottom: none;
+}
+
+.stock-list-item span {
+  font-size: 19px;
+  /* Slightly larger font */
+  font-weight: bold;
+  color: #E5E7EB;
+}
+
+.stock-list-item .actions button {
+  margin-left: 12px;
+  /* Adjusted margin */
+}

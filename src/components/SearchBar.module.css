@@ -1,0 +1,47 @@
+/* Search Component Styles */
+.search-bar-container {
+  position: relative; /* Needed for absolute positioning of search results */
+}
+
+.search-box {
+  background-color: #1F2937;
+  color: #E5E7EB;
+  padding: 10px 15px; /* Adjusted padding */
+  border-radius: 6px; /* Adjusted border-radius */
+  font-size: 15px; /* Adjusted font size */
+  border: 1px solid #374151; /* Added subtle border */
+  width: calc(100% - 30px); /* Adjust for padding and border */
+  max-width: 400px; /* Increased max-width for search bar */
+}
+
+.search-results {
+  margin-top: 5px;
+  max-height: 250px; /* Slightly increased max-height */
+  overflow-y: auto;
+  background-color: #1F2937;
+  border-radius: 6px;
+  max-width: 400px; /* Match search-box max-width */
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for dropdown */
+}
+
+.search-results-item {
+  padding: 12px 18px; /* Adjusted padding */
+  border-bottom: 1px solid #374151;
+  cursor: pointer;
+  text-align: left;
+  font-size: 15px;
+}
+
+.search-results-item:hover {
+  background-color: #374151;
+}
+
+.loading-indicator {
+  color: #9CA3AF;
+  margin-top: 5px;
+  font-size: 14px;
+}

@@ -1,0 +1,152 @@
+/* Fundamental Data Page Styles */
+.fundamental-data-content {
+  margin-top: 50px;
+  background-color: #1F2937;
+  padding: 25px;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fundamental-data-content h2 {
+  color: #E5E7EB;
+  margin-bottom: 20px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.fundamental-data-content h3 {
+  color: #E5E7EB;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  border-bottom: 1px solid #374151;
+  padding-bottom: 5px;
+}
+
+.fundamental-data-content p {
+  font-size: 15px;
+  color: #B0B9C6;
+  margin-bottom: 8px;
+}
+
+.fundamental-data-content strong {
+  color: #E5E7EB;
+}
+
+.statement-table-container {
+  margin-bottom: 30px;
+}
+
+.table-scroll-wrapper {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.fundamental-data-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  min-width: 800px;
+  /* Ensure table is wide enough to scroll */
+}
+
+.fundamental-data-content th,
+.fundamental-data-content td {
+  padding: 10px 15px;
+  border-bottom: 1px solid #374151;
+  text-align: right;
+  /* Align numbers to the right */
+  white-space: nowrap;
+  /* Prevent text wrapping in table cells */
+}
+
+.fundamental-data-content th:first-child,
+.fundamental-data-content td:first-child {
+  text-align: left;
+  /* Align first column (e.g., item name) to the left */
+}
+
+.fundamental-data-content th {
+  background-color: #374151;
+  font-weight: bold;
+  color: #E5E7EB;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.fundamental-data-content tr:hover {
+  background-color: #2D3748;
+}
+
+.metrics-container,
+.fundamental-state-container {
+  background-color: #111827;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Fundamental State Colors */
+.state-healthy,
+.state-strong,
+.state-positive {
+  color: #10B981;
+  /* Green */
+  font-weight: bold;
+}
+
+.state-weak,
+.state-volatile,
+.state-stalling {
+  color: #F59E0B;
+  /* Orange */
+  font-weight: bold;
+}
+
+.state-lossmaking,
+.state-negative,
+.state-stressed {
+  color: #EF4444;
+  /* Red */
+  font-weight: bold;
+}
+
+.state-moderate,
+.state-fair {
+  color: #6366F1;
+  /* Blue */
+  font-weight: bold;
+}
+
+.state-unknown,
+.state-unclear {
+  color: #9CA3AF;
+  /* Gray */
+  font-weight: bold;
+}
+
+.state-expensive {
+  color: #EF4444;
+  /* Red */
+  font-weight: bold;
+}
+
+.state-cheap {
+  color: #10B981;
+  /* Green */
+  font-weight: bold;
+}
+
+.sparkline-section {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #111827;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  /* Ensure charts stack vertically */
+}

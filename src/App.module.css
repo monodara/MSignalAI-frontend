@@ -1,0 +1,20 @@
+.App {
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #111827;
+  /* Ensure app background matches body */
+}
+
+/* Global box-sizing for consistent layout */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.content-container {
+  margin-left: 0px;
+  margin-right: 0px;
+  /* margin-top: 10px; */
+}

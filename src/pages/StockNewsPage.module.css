@@ -1,0 +1,75 @@
+/* News List Page Styles */
+.news-list-container {
+  margin-top: 25px;
+  background-color: #1F2937;
+  padding: 25px;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-list-container h2 {
+  color: #E5E7EB;
+  margin-bottom: 20px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.news-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px;
+}
+
+.news-card {
+  background-color: #111827;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.news-card h3 {
+  font-size: 18px;
+  color: #E5E7EB;
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.news-card p {
+  font-size: 14px;
+  color: #9CA3AF;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.news-card strong {
+  color: #E5E7EB;
+}
+
+.news-card a {
+  color: #6366F1;
+  text-decoration: none;
+}
+
+.news-card a:hover {
+  text-decoration: underline;
+}
+
+.sentiment-positive {
+  color: #10B981; /* Green */
+  font-weight: bold;
+}
+
+.sentiment-neutral {
+  color: #9CA3AF; /* Gray */
+  font-weight: bold;
+}
+
+.sentiment-negative {
+  color: #EF4444; /* Red */
+  font-weight: bold;
+}

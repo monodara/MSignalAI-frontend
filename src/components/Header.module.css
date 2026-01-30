@@ -1,0 +1,192 @@
+/* Header Styles */
+.header {
+  margin-bottom: 5px;
+  /* Reduced margin to bring slogan closer */
+  display: flex;
+  justify-content: space-between;
+  /* Distribute items to left, center, right */
+  align-items: center;
+  padding: 15px 25px;
+  /* Increased padding for a more substantial feel */
+  background-color: #1F2937;
+  /* Darker background for header */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+  position: sticky;
+  /* Make the header sticky */
+  top: 0;
+  /* Stick to the top of the viewport */
+  z-index: 100;
+  /* Ensure it stays above other content */
+  width: 100%;
+  /* Ensure it takes full width */
+}
+
+.header-left {
+  flex: 1;
+  /* Allow left section to take some space */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* Align search bar to the left */
+}
+
+.header-center-content {
+  /* New class for the centered title and slogan */
+  flex: 1;
+  /* Allow center section to take some space */
+  display: flex;
+  flex-direction: column;
+  /* Stack title and slogan vertically */
+  align-items: center;
+  /* Center title and slogan horizontally */
+  justify-content: center;
+  position: relative;
+  /* Added for positioning the dialog button */
+}
+
+.header-right {
+  flex: 1;
+  /* Allow right section to take some space */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* Align buttons to the right */
+  gap: 10px;
+  /* Space between buttons */
+}
+
+.header .title {
+  font-size: 36px;
+  /* Slightly larger title */
+  font-weight: bold;
+  color: #E5E7EB;
+  margin-bottom: 5px;
+  /* Space between title and slogan */
+}
+
+.clickableTitle {
+  cursor: pointer;
+  /* Indicate clickable */
+}
+
+.slogan-text {
+  /* New class for slogan within header */
+  font-size: 16px;
+  /* Slightly smaller font for subtlety */
+  color: #B0B9C6;
+  /* Slightly lighter color for contrast */
+  text-align: center;
+}
+
+/* Button Styles (General) */
+.home-button,
+.my-list-button,
+.add-to-list-button,
+.time-interval-button,
+.view-button,
+.remove-button {
+  /* Removed .ask-me-button from here */
+  background-color: #374151;
+  color: #E5E7EB;
+  border: none;
+  padding: 10px 18px;
+  /* Slightly larger padding for buttons */
+  border-radius: 6px;
+  /* Slightly larger border-radius */
+  cursor: pointer;
+  font-size: 15px;
+  /* Slightly larger font size */
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+  /* Added transform for hover effect */
+}
+
+.home-button:hover,
+.my-list-button:hover,
+.add-to-list-button:hover,
+.time-interval-button:hover,
+.view-button:hover,
+.remove-button:hover {
+  /* Removed .ask-me-button from here */
+  background-color: #4B5563;
+  transform: translateY(-1px);
+  /* Subtle lift effect */
+}
+
+.home-button.active,
+.my-list-button.active,
+.add-to-list-button.active,
+.time-interval-button.active {
+  /* Removed .ask-me-button from here */
+  background-color: #6366F1;
+  transform: translateY(0);
+  /* Reset transform for active state */
+}
+
+/* Specific Button Overrides */
+.view-button {
+  background-color: #6366F1;
+}
+
+.view-button:hover {
+  background-color: #4F46E5;
+}
+
+.remove-button {
+  background-color: #EF4444;
+}
+
+.remove-button:hover {
+  background-color: #DC2626;
+}
+
+/* Ask Me Dialog Button Specific Styles */
+.ask-me-dialog-button {
+  position: absolute;
+  top: 30px;
+  /* Adjusted from 0 */
+  right: 60px;
+  /* Adjusted from 0 */
+  background-color: #6366F1;
+  /* A distinct color */
+  color: #E5E7EB;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  /* Pill shape for the bubble */
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+  transform: translate(0%, -50%);
+  /* Adjusted from (50%, -50%) */
+  white-space: nowrap;
+  /* Prevent text wrapping */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.ask-me-dialog-button:hover {
+  background-color: #4F46E5;
+  transform: translate(0%, -50%) translateY(-1px);
+  /* Adjusted transform */
+}
+
+.ask-me-dialog-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  /* Position vertically in the middle */
+  left: -8px;
+  /* Position to the left of the button */
+  transform: translateY(-50%) rotate(-25deg);
+  /* Rotate to point left */
+  width: 16px;
+  /* Size of the triangle */
+  height: 16px;
+  background-color: #6366F1;
+  /* Match button background */
+  clip-path: polygon(100% 0%, 0% 50%, 100% 100%);
+  /* Left-pointing triangle shape */
+  z-index: -1;
+  /* Place behind the button */
+}

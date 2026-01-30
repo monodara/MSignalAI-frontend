@@ -1,0 +1,44 @@
+/* Market ETFs Component Styles */
+.market-index-container {
+  margin-bottom: 24px;
+}
+
+.market-index-title {
+  font-size: 22px; /* Slightly larger title */
+  font-weight: bold;
+  color: #E5E7EB;
+  margin-bottom: 15px; /* Increased margin */
+  text-align: center;
+}
+
+.market-index-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Increased gap */
+}
+
+.market-index-card {
+  background-color: #1F2937;
+  padding: 18px; /* Increased padding */
+  border-radius: 8px;
+  min-width: 160px; /* Slightly increased min-width */
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.market-index-symbol {
+  font-size: 19px; /* Slightly larger font */
+  font-weight: bold;
+  color: #E5E7EB;
+}
+
+.market-index-value {
+  font-size: 17px; /* Slightly larger font */
+  color: #10B981;
+}
+
+.market-index-change {
+  font-size: 15px; /* Slightly larger font */
+  color: #9CA3AF;
+}

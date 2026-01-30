@@ -1,0 +1,32 @@
+/* Time interval and indicator buttons spacing */
+.time-interval-buttons {
+  display: flex; /* Use flexbox for spacing */
+  gap: 10px; /* Space between buttons */
+  justify-content: center; /* Center the buttons */
+  margin-bottom: 20px; /* Increased margin to create space before charts */
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+
+.time-interval-buttons .time-interval-button {
+  margin-right: 0; /* Reset margin-right as gap handles it */
+}
+
+.time-interval-buttons .time-interval-button:last-child {
+  margin-right: 0;
+}
+
+/* Chart Component Styles */
+.chart-container {
+  margin-top: 25px; /* Increased margin */
+  background-color: #1F2937;
+  padding: 25px; /* Increased padding */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.chart-title {
+  font-size: 22px; /* Slightly larger title */
+  font-weight: bold;
+  color: #E5E7EB;
+  margin-bottom: 20px; /* Increased margin */
+}
