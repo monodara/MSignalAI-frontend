@@ -6,6 +6,7 @@
 ![Lightweight Charts](https://img.shields.io/badge/Lightweight_Charts-FF4E4E?style=flat)
 ![Axios](https://img.shields.io/badge/Axios-5A29E4?style=flat&logo=axios&logoColor=white)
 ![CSS Modules](https://img.shields.io/badge/CSS_Modules-000000?style=flat&logo=css-modules&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=github-actions&logoColor=white)
 
 This directory contains the frontend for the MSignalAI application, a responsive and interactive user interface built with React and TypeScript. It consumes the API provided by the backend to display stock charts, financial data, news, and AI-driven analysis.
 

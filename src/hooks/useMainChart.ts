@@ -42,7 +42,7 @@ export const useMainChart = ({ containerRef, stockData, divergences }: UseMainCh
       window.removeEventListener('resize', handleResize);
       chart.remove();
     };
-  });
+  }, [containerRef]); // Added containerRef to dependencies
 
   // --- Data Loading for Main Series ---
   useEffect(() => {
