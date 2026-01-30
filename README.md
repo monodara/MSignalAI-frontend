@@ -48,12 +48,6 @@ The frontend is responsible for:
     npm install
     ```
 
-3.  **Configure Environment Variables:**
-    Create a `.env` file in this directory to specify the backend API URL.
-
-    ```
-    REACT_APP_API_BASE_URL="http://localhost:8000"
-    ```
 
 ### Running the Application
 
