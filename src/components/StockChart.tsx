@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { IChartApi } from 'lightweight-charts';
 import { StockData, RSIData, BollingerBandData } from '../types';
 import { fetchRSIData, fetchBollingerBandData } from '../services/api';
 import { useMACDChart } from '../hooks/useMACDChart';

@@ -1,7 +1,7 @@
 // frontend/src/hooks/useMACDChart.ts
 import { useEffect, useRef } from 'react';
 import { createChart, IChartApi, ISeriesApi, Time } from 'lightweight-charts';
-import { StockData, MACDMarker, MACDHistogramItem } from '../types'; // Import MACDMarker and MACDHistogramItem
+import { MACDMarker, MACDHistogramItem } from '../types'; // Import MACDMarker and MACDHistogramItem
 import { fetchMACDData } from '../services/api';
 
 interface UseMACDChartProps {
@@ -50,7 +50,7 @@ export const useMACDChart = ({ containerRef, selectedSymbol, interval, showMACD 
       const macdLineData = data.macd_line.map((value, index) => ({ time: new Date(data.timestamps[index]).getTime() / 1000 as Time, value: value !== null ? value : undefined })).filter(item => item.value !== undefined);
       const signalLineData = data.signal_line.map((value, index) => ({ time: new Date(data.timestamps[index]).getTime() / 1000 as Time, value: value !== null ? value : undefined })).filter(item => item.value !== undefined);
       const histogramData = data.histogram_data.map((item: MACDHistogramItem) => ({ time: new Date(item.time).getTime() / 1000 as Time, value: item.value !== null ? item.value : undefined, color: item.color })).filter(item => item.value !== undefined);
-      
+
       macdLineSeriesRef.current?.setData(macdLineData);
       signalLineSeriesRef.current?.setData(signalLineData);
       macdHistogramSeriesRef.current?.setData(histogramData);
@@ -75,7 +75,6 @@ export const useMACDChart = ({ containerRef, selectedSymbol, interval, showMACD 
       signalLineSeriesRef.current = null;
       macdHistogramSeriesRef.current = null;
     };
-  }, [showMACD, selectedSymbol, interval]); // Dependencies for MACD chart and series
-
+  }, [showMACD, selectedSymbol, interval, containerRef]);
   return macdChartRef;
 };

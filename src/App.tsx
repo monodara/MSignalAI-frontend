@@ -1,6 +1,5 @@
 import React, { lazy, Suspense } from 'react'; // Removed useState
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import styles from './App.module.css'; // Import as CSS module
 
 // Import Context
 import { useMarketETFsContext } from './context/MarketETFsContext';

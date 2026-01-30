@@ -1,7 +1,7 @@
 // frontend/src/hooks/useBollingerBandsChart.ts
 import { useEffect, useRef } from 'react';
-import { IChartApi, ISeriesApi, CandlestickSeriesPartialOptions, LineData, HistogramData, SeriesMarker, Time } from 'lightweight-charts';
-import { BollingerBandData, BollingerBandMarker } from '../types';
+import { IChartApi, ISeriesApi, LineData, SeriesMarker, Time } from 'lightweight-charts';
+import { BollingerBandData } from '../types';
 
 interface BollingerBandChartProps {
   chart: IChartApi | null;

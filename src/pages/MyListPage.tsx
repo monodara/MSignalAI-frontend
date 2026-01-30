@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getMyStockList, removeStockFromMyList } from '../utils/localStorage';
-import Header from '../components/Header'; // Assuming Header is used on all pages
 import styles from './MyListPage.module.css'; // Import as CSS module
 import headerStyles from '../components/Header.module.css'; // Import header styles for buttons
 import appStyles from '../App.module.css'; // Import App.module.css for global styles

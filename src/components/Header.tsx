@@ -1,8 +1,6 @@
 // frontend/src/components/Header.tsx
 import React, { ReactNode } from 'react';
 import { useNavigate } from 'react-router-dom';
-import SearchBar from './SearchBar'; // Import SearchBar
-import { SearchResult } from '../types'; // Import SearchResult type
 import styles from './Header.module.css'; // Import as CSS module
 
 interface HeaderProps {

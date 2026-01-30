@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { createChart, IChartApi, ISeriesApi, Time, LineData } from 'lightweight-charts';
+import { createChart, IChartApi, ISeriesApi, Time } from 'lightweight-charts';
 import { StockData, Divergences } from '../types';
 
 interface UseMainChartProps {
@@ -42,7 +42,7 @@ export const useMainChart = ({ containerRef, stockData, divergences }: UseMainCh
       window.removeEventListener('resize', handleResize);
       chart.remove();
     };
-  }, []);
+  });
 
   // --- Data Loading for Main Series ---
   useEffect(() => {

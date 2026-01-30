@@ -1,6 +1,6 @@
 // frontend/src/services/api.ts
 import axios from 'axios';
-import { StockData, SearchResult, MarketETF, MACDData, RSIData, BollingerBandData, StockDataPoint, Event, FundamentalData, StockState, AgentAnalysis } from '../types';
+import { StockData, SearchResult, MarketETF, MACDData, RSIData, BollingerBandData, StockDataPoint, Event, FundamentalData, AgentAnalysis } from '../types';
 
 const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:8000';
 

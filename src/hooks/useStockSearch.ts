@@ -1,5 +1,5 @@
 // frontend/src/hooks/useStockSearch.ts
-import { useState, useRef, useCallback } from 'react';
+import { useState, useRef } from 'react';
 import { searchStocks } from '../services/api';
 import { SearchResult } from '../types';
 
